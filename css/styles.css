@@ -6,8 +6,14 @@ h1 {
   font-size: 30px;
 }
 
-h2 {
+h2, h3, h5 {
   font-weight: bold;
+}
+
+p {
+  background-color: white;
+  border: 2px solid black;
+  float: inherit;
 }
 
 label {
@@ -15,8 +21,12 @@ label {
   margin-top: 10px;
 }
 
-input {
+input{
   margin-bottom: 10px;
+}
+
+input[type=text] #new-balance {
+  width: 25%;
 }
 
 button {
@@ -26,4 +36,5 @@ button {
 .card {
   border: 2px solid black;
   background-color: lightblue;
+  margin-bottom: 20px;
 }
