@@ -1,12 +1,6 @@
-//BIZ LOGIC ----------------------------------
-var balance = 0;
-
-
-
-
-//UI LOGIC -----------------------------------
-
 $(document).ready(function() {
+
+  var balance = 0;
 
   $("form#new-account").submit(function(event) {
     event.preventDefault();
@@ -15,7 +9,7 @@ $(document).ready(function() {
 
     balance += intitialDeposit;
 
-
+    $("#current-balance").text("$" + balance.toFixed(2));
   });
 
   $("form#new-transaction").submit(function(event) {
@@ -24,5 +18,5 @@ $(document).ready(function() {
     var newWithdrawal = parseInt($("input#new-withdrawal").val(), 10);
   });
 
-  $("#current-balance").append("$" + balance.toFixed(2));
+  $("#current-balance").text("$" + balance.toFixed(2));
 });
