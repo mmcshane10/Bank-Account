@@ -20,10 +20,10 @@
           <h2>Register a new account:</h2>
           <form id="new-account">
             <label for="formGroupExampleInput">Name:</label>
-            <input type="text" class="form-control" id="user-name">
+            <input type="text" class="form-control" id="user-name" required>
 
             <label for="formGroupExampleInput">Initial Deposit:</label>
-            <input type="text" class="form-control" id="initial-deposit">
+            <input type="number" class="form-control" id="initial-deposit" required>
 
             <button type ="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -37,10 +37,10 @@
           <h2>Deposit or withdraw funds:</h2>
           <form id="new-transaction">
             <label for="formGroupExampleInput">Deposit Amount:</label>
-            <input type="text" class="form-control" id="new-deposit">
+            <input type="number" class="form-control" id="new-deposit" min="0" value="0">
 
             <label for="formGroupExampleInput">Withdrawal Amount:</label>
-            <input type="text" class="form-control" id="new-withdrawal">
+            <input type="number" class="form-control" id="new-withdrawal" min="0" value="0">
 
             <button type ="submit" class="btn btn-primary">Submit</button>
           </form>
