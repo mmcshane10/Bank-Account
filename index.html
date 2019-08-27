@@ -3,12 +3,50 @@
 <head>
   <meta charset="utf-8">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Peta&display=swap" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
   <title>Bank Account</title>
 </head>
+<div class="container">
+  <h1>Welcome to the Epicodus Credit Union!</h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h2>Register a new account:</h2>
+          <form id="new-account">
+            <label for="formGroupExampleInput">Name:</label>
+            <input type="text" class="form-control" id="user-name">
 
+            <label for="formGroupExampleInput">Initial Deposit:</label>
+            <input type="text" class="form-control" id="initial-deposit">
+
+            <button type ="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h2>Deposit or withdraw funds:</h2>
+          <form id="new-transaction">
+            <label for="formGroupExampleInput">Deposit Amount:</label>
+            <input type="text" class="form-control" id="new-deposit">
+
+            <label for="formGroupExampleInput">Withdrawal Amount:</label>
+            <input type="text" class="form-control" id="new-withdraw">
+
+            <button type ="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <body>
 
 </body>
